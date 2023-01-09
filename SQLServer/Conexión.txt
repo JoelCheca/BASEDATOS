@@ -1,0 +1,24 @@
+# SQL Server settings
+spring.datasource.url=jdbc:sqlserver://localhost:1433;databaseName=BOOKSTORE;encrypt=true;TrustServerCertificate=True;
+spring.datasource.username=sa
+spring.datasource.password=uni
+logging.level.=ERROR
+logging.level.org.springframework.jdbc.core = TRACE
+
+server.servlet.session.timeout=60m
+server.servlet.session.cookie.http-only =true
+server.servlet.session.cookie.secure=true
+
+
+
+
+---------------------------------------------------------------------------------
+
+# SQL Server settings
+spring.datasource.url=jdbc:sqlserver://localhost:1433;databaseName=BOOKSTORE;encrypt=true;TrustServerCertificate=True;
+spring.datasource.username=sa
+spring.datasource.password=uni
+spring.jpa.database-platform=org.hibernate.dialect.SQLServerDialect
+spring.jpa.hibernate.ddl-auto=none
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
