@@ -9,7 +9,19 @@ server.servlet.session.timeout=60m
 server.servlet.session.cookie.http-only =true
 server.servlet.session.cookie.secure=true
 
+---------------------------------------------------------------------------------------
 
+
+# SQL Server settings
+spring.datasource.url=jdbc:sqlserver://localhost:1433;databaseName=FACTURACION;encrypt=true;TrustServerCertificate=True;
+spring.datasource.username=sa
+spring.datasource.password=uni
+
+# mostrar sentencias SQL en la consola
+spring.jpa.show-sql = true
+
+# actualizar base de datos y crear entidades
+spring.jpa.hibernate.ddl-auto = none
 
 
 ---------------------------------------------------------------------------------
